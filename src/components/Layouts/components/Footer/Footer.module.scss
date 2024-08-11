@@ -1,0 +1,94 @@
+.wrapper {
+    padding: 150px 0;
+    overflow: hidden;
+    padding: 68px 180px 40px;
+    color: #a9b3bb;
+    background-color: #181821;
+}
+
+.column-top {
+    display: flex;
+    align-items: center;
+}
+
+
+.top-logo {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.top-slogan {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.list-contact {
+    position: relative;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: #a9b3bb;
+
+    a {
+        color: #a9b3bb;
+    }
+}
+
+.heading {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.list {
+    margin-top: 20px;
+    padding-left: 0;
+
+    li {
+        position: relative;
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        margin-bottom: 8px;
+    }
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.copyright {
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+.social-list {
+    display: flex;
+    align-items: center;
+}
+
+.social-item {
+    padding: 12px;
+    font-size: 3.2rem;
+
+}
+
+.youtube-icon {
+    color: #eb2c3b;
+}
+
+.facebook-icon {
+    color: #4867aa;
+}
+
+.tiktok-icon {
+    color: #ccc;
+}

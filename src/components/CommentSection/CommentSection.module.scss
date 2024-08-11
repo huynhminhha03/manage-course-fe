@@ -1,0 +1,52 @@
+.wrapper.replyMode {
+    padding-left: 16px;
+    margin-left: 8px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+
+    gap: 16px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.comment-section {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.new-comment {
+    display: flex;
+    margin-top: 10px;
+
+    input{
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+
+

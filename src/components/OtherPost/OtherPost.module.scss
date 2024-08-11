@@ -1,0 +1,26 @@
+.wrapper {
+    margin-top: 60px;
+}
+
+.heading {
+    font-size: 2.2rem;
+}
+
+.list {
+    margin-top: 16px;
+    padding-left: 28px;
+    list-style-type: disc;
+    font-size: 1.6rem;
+
+        a {
+            display: inline-block;
+            padding: 4px 0;
+            color: #292929;
+        }
+}
+
+.no-result {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    color: #757575;
+}

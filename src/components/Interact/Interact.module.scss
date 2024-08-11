@@ -1,0 +1,30 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-top: 24px;
+    font-size: 1.6rem;
+    color: #757575;
+}
+
+.react-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+        color: #333;
+    }
+
+    svg {
+        font-size: 2rem;
+    }
+}
+
+.react-btn.actived {
+    color: #ed2b48;
+}

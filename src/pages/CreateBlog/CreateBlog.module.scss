@@ -1,0 +1,53 @@
+.wrapper {
+}
+
+.text-editor-container {
+    margin: 20px 60px;
+}
+
+.title-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.quill-editor {
+    background-color: white;
+    height: 300px;
+}
+
+.wrap-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.button {
+    min-width: 148px;
+    height: 32px;
+
+    background-color: #2b8ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 99px;
+}
+.button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.title {
+    color: var(--white-color);
+}
+
+.wrap-topic {
+    display: flex;
+    margin-top: 70px;
+    margin: 70px  60px 20px;
+
+}

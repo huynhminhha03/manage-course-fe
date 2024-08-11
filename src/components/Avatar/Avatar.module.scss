@@ -1,0 +1,13 @@
+
+.wrapper {
+    font-size: var(--font-size);
+    background: transparent;
+    border-radius: 50%;
+}
+
+.img {
+    width: 9em;
+    height: 9em;
+    object-fit: cover;
+    border-radius: 50%;
+}

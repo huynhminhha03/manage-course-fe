@@ -1,0 +1,167 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translate(80%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(80%);
+    }
+}
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 35;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    will-change: opacity;
+    animation: fadeIn ease 0.5s;
+}
+
+.wrapper.isClosing {
+    animation: fadeOut ease 0.5s;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0009;
+}
+
+.container {
+    z-index: 2;
+    width: 43%;
+    min-width: 800px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: #00000026 0 4px 12px;
+    cursor: default;
+    position: relative;
+    will-change: transform;
+    animation: slideIn ease 0.5s;
+    overflow: hidden;
+}
+
+.container.isClosing {
+    animation: slideOut ease 0.5s;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    z-index: 2;
+    font-size: 2rem;
+    color: #757575;
+    padding: 16px 20px;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &:hover {
+        color: #333;
+        cursor: pointer;
+    }
+}
+
+.comment-modal {
+    position: relative;
+    max-height: 100vh;
+    padding: 40px 30px 60px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.body {
+    display: block;
+    box-sizing: border-box;
+    color: var(--comment-text-color);
+    background-color: var(--white-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-variant-ligatures: none;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
+    touch-action: manipulation;
+    -webkit-user-drag: none;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.show-comment {
+    margin-top: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.title {
+    color: #4e586b;
+    font-size: 18px;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.note {
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: #808b9a;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px 24px;
+}
+
+.message {
+    font-size: 1.4rem;
+    color: #808b9a;
+}
